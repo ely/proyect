@@ -1,0 +1,9 @@
+{{extend 'layout.html'}}
+{{for prod in producto:}}
+	<h1>{{=prod.nombre}}</h1>
+	<h3>Codigo Producto: {{=prod.idproducto}}</h3>
+	<p>
+	{{=prod.nombre}} pertenece a la categoria {{=prod.categoria}}.
+	El stock es de {{=prod.stock}}.<br>
+	</p>
+{{pass}}

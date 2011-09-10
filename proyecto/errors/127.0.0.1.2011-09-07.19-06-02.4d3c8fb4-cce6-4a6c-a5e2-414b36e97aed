@@ -1,0 +1,20 @@
+(dp1
+S'output'
+p2
+S''
+sS'layer'
+p3
+S'/home/alumno/web2py/applications/datos/models/db.py'
+p4
+sS'code'
+p5
+S"# -*- coding: utf-8 -*-\n\ndb = DAL('sqlite://datos.db');\n# definimos la base de datos \ndb.define_table('alumno',Field('codigo'),\n\t\t\t\t\t\tField('nombre'),\n\t\t\t\t\t\tField('apellidos'),\n\t\t\t\t\t\tField('fnacimiento','date'),\n\t\t\t\t\t\tField('email'),\n\t\t\t\t\t\tField('hobby'))\ndb.alumno.codigo.requires = IS_NOT_EMPTY()\ndb.alumno.nombres.requires = IS_LENGTH(100)\ndb.alumno.apellidos.requires = IS_ALPHANUMERIC()\ndb.alumno.fnacimiento.requires = Is_DATE('%Y-%m-%d')\ndb.alumno.email.requires = IS_EMAIL()\ndb.alumno.hobby.default = 'Estudiar :P'\n"
+p6
+sS'snapshot'
+p7
+(dp8
+sS'traceback'
+p9
+S'Traceback (most recent call last):\n  File "/home/alumno/web2py/gluon/restricted.py", line 192, in restricted\n    exec ccode in environment\n  File "/home/alumno/web2py/applications/datos/models/db.py", line 12, in <module>\n    db.alumno.nombres.requires = IS_LENGTH(100)\n  File "/home/alumno/web2py/gluon/dal.py", line 4731, in __getattr__\n    return self[key]\n  File "/home/alumno/web2py/gluon/dal.py", line 4675, in __getitem__\n    return dict.__getitem__(self, str(key))\nKeyError: \'nombres\'\n'
+p10
+s.

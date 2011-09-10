@@ -1,0 +1,28 @@
+{{extend 'layout.html'}}
+
+<h1>Productos</h1>
+<!--<form action ='' method = 'post'>
+	<label>Id producto </label>
+	<input type='text'name='idproducto'/>
+	<label>Nombre:</label>
+	<input type='text'name='nombre'/>
+	<label>Categoria:</label>
+	<input type='text'name='nombre'/>
+	<label>Stock:</label>
+	<input type='text'name='nombre'/>
+	<input type ='submit' value ='guardar'/>
+</form> -->
+<p>Registro de productos
+{{for producto in productos:}}
+	<ul>
+	<li><a href='detalle/{{=producto.idproducto}}'>{{=producto.idproducto}}</a></li>
+	<li><em>{{=producto.nombre}}</em></li>
+	<li>Categoria: {{=producto.categoria}}</li>
+	<li>Stock: {{=producto.stock}}</li>
+	</ul>
+	<hr>
+<!-- -->	
+{{pass}}
+</p>
+
+.

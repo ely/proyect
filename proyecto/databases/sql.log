@@ -1,0 +1,10 @@
+timestamp: 2011-09-07T19:06:02.791498
+timestamp: 2011-09-10T16:25:18.913033
+CREATE TABLE producto(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    idproducto INTEGER,
+    nombre CHAR(512),
+    categoria CHAR(512),
+    stock INTEGER
+);
+success!
